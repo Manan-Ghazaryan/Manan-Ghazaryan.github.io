@@ -1,0 +1,43 @@
+header {
+    background-image: url(../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+header .header-div {
+    margin: 300px 0px 0px 80px;
+    padding: 20px 40px 10px 40px;
+    background-color: rgba(0,0,0,0.8);
+}
+header h1 {
+    color: white;
+    font-family: "Abrade", Sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.3em;
+    letter-spacing: -2px;
+    -webkit-text-stroke-width: 0.3px;
+    stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+    stroke: black;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.5);
+}
+header .header-sec-div{
+    margin: 0px 0px 0px 350px;
+    padding: 10px 20px 5px 20px;
+    background-color: #FFFFFFE3;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: black;
+}
+header h6 {
+    color: #A5123C;;
+    font-family: "Abrade", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3em;
+    letter-spacing: -2px;
+}
+footer p{
+    color: #C6C6C6;
+}
