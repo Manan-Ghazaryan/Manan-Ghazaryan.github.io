@@ -1,193 +1,471 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">  <!-- uxxutyun@ uxxel -->
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
-    
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
 
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
+<link href="css/navbar-top-fixed.css" rel="stylesheet">
 </head>
-<body>
-    
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Fixed navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-           
-            </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <button class="btn btn-outline-success" type="submit">Contact</button>
-            <!-- </form> -->
-          </div>
-        </div>
-      </nav>
-      <div class="container">
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top  ">
+            <div class="container">
+              <a class="navbar-brand " href="#">
+                <img src="assets/img/logo.png" class="logo" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Kanzlei</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rechtsanwalt</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Krypto Betrug
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Krypto Betrug, was tun?</a></li>
+                      <li><a class="dropdown-item" href="#">Instagram, WhatsApp, Telegram</a></li>
+                      <li><a class="dropdown-item" href="#">Geld Zurück</a></li>
+                      <li><a class="dropdown-item" href="#">Bitcoin Betrug</a></li>
+                      <li><a class="dropdown-item" href="#">Wo melden?</a></li>
+                      <li><a class="dropdown-item" href="#">Binance Betrugsmasche</a></li>
+                      <li><a class="dropdown-item" href="#">Bitpanda Betrugsmasche</a></li>
+                      <li><a class="dropdown-item" href="#">Coinbase Betrugsmasche</a></li>
+                      <li><a class="dropdown-item" href="#">crypto.com Betrugsmasche</a></li>
+                      <li><a class="dropdown-item" href="#">Kraken Betrugsmasche</a></li>
+                      <li><a class="dropdown-item" href="#">Nuri Betrugsmasche</a></li>
+
+
+                    </ul>
+                  </li> 
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NFT
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">NFT Rechtsanwalt</a></li>
+                      <li><a class="dropdown-item" href="#">NFT Betrug</a></li>
+                    </ul>
+                  </li> 
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Börsen
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Mittelherkunftsnachweis</a></li>
+                      <li><a class="dropdown-item" href="#">Börse fordert Herkunftsnachweis</a></li>
+                      <li><a class="dropdown-item" href="#">Börse zahlt nicht aus</a></li>
+                      <li><a class="dropdown-item" href="#">Bitpnda</a></li>
+                      <li><a class="dropdown-item" href="#">Meldung</a></li>
+                      <li><a class="dropdown-item" href="#">Schadensersatz fordern!</a></li>
+
+
+                    </ul>
+                  </li> 
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Steuern
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Erfährt Finanzamt von Bitcoins?</a></li>
+                      <li><a class="dropdown-item" href="#">Steuererklärung</a></li>
+                      <li><a class="dropdown-item" href="#">Steuerhinterziehung</a></li>
+                      <li><a class="dropdown-item" href="#">Haltedauer nachweisen</a></li>
+                      <li><a class="dropdown-item" href="#">Finanzamt Probleme</a></li>
+                      <li><a class="dropdown-item" href="#">Finanzamt Erfahrungen</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Weiteres
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Zahlung mit Kryptowährungen</a></li>
+                      <li><a class="dropdown-item" href="#">Bitcoin als digitales Gold?</a></li>
+                      <li><a class="dropdown-item" href="#">Bank fordert Herkunftsnachweis</a></li>
+                      <li><a class="dropdown-item" href="#">Probleme mit der Bank</a></li>
+                      <li><a class="dropdown-item" href="#">Straftaten durch Bitcoin Besitz</a></li>
+                      <li><a class="dropdown-item" href="#">Anwaltskosten</a></li>
+
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn header-btn " type="submit">Kontakt</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+       <div class="container">
         <div class="row">
-            <div class="col-8 header-div">
+            <div class="col-7 col-md-7 headerblackDiv">
                 <h1>Kanzlei für Digital-
-                    und Wirtschaftsrecht</h1>
+                    <br>
+                    und Wirtschaftsrecht
+                </h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-6 header-sec-div">
-                <h6>Kryptowährungen, NFT & Blockchain
-                </h6>
+            <div class="col-7 col-md-7 headerWhiteDiv">
+                <h6>Kryptowährungen, NFT & Blockchain </h6>
             </div>
         </div>
-      </div>
-</header>
-<main>
-    
-<section class="p-5" id="contact">
-      <div class="container">
-          <div class="row justify-content-center ">
-            <div class="col-6">
+       </div>
 
-              <form class="row g-3 form" method="post">
-                <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Vorname Nachname * " id="name" aria-label="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" placeholder="E-Mail * " id="email" aria-label="Last name">
-                </div>
-                <div class="col-12">
-                  <input type="tel" class="form-control"  id="phone" placeholder="Telefonnummer">
-                </div>
-                <div class="col-12">
-                   <textarea class="form-control" placeholder="Nachricht * " id="message" style="height: 100px"></textarea>
-                </div>
-               
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Ich habe die Datenschutzerklärung gelesen und willige hiermit in die Erhebung und Verarbeitung meiner personenbezogenen Daten zum Zweck der Bearbeitung meines Anliegens ein.
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-outline-primary" id="btn" type="submit">Nachricht Senden </button>
-                </div>
-              </form>
-
-             
-          </div>
-      </div>
-</section>
-</main>
-
-    <footer class="bg-dark">
+    </header>
+    <main>
+      <section class="sec1 p-5">
         <div class="container">
-            <footer class="py-5">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-md-6">
-                        
-                        <p>Ihr Anwalt mit Schwerpunkt Bitcoin, Kryptowährungen, NFT und Blockchain.
-
-                        </p>
-                    </div>
+          <div class="row justify-content-center">
+            <div class="col-8 ">
+                  <h2>Welcher Rechtsanwalt für die Beratung im Bereich Kryptowährungen und Blockchain?</h2>
+                  <p>Sie sind auf der Suche nach einem Anwalt im Bereich Blockchain, der Ihnen bezüglich Bitcoin und Kryptowährungen weiterhilft. Aber Sie sind sich nicht sicher, welcher Rechtsanwalt für Kryptowährungen wirklich erfahren und damit der richtige Ansprechpartner ist.
+                  <br>
+                    Nicht jeder Rechtsanwalt ist der ideale Rechtsbeistand zu Fragen rund um Bitcoin und Kryptowährungen. Das liegt daran, dass das Thema Kryptowährungen neu und noch unübersichtlich für die meisten Juristen ist.
+                    <br>
+                    Grundsätzlich sollte daher ein Rechtsanwalt gesucht werden, der sich speziell mit der Thematik auskennt. Hilfreich ist es, wenn Ihr Anwalt bereits selbst – also als Privatperson – einschlägige Erfahrungen mit Kryptowährungen gesammelt hat. 
+                    <br>
+                    Beispielsweise könnte es sein, dass Ihr Rechtsanwalt privat mit dem Thema Blockchain in Berührung steht. Er sollte Bitcoin und andere Kryptowährungen selbst trade. Dadurch kennt er die Kryptobörsen und Handelsplätze.
+                    <br>
+                    Wer selbst Trading betreibt, musste sich bereits für die eigene Steuererklärung mit den steuerrechtlichen Fragen auseinandersetzen und kann MandantInnen daher aus eigener Erfahrung weiterhelfen.
+                    <br>
+                    Weiter sollte Ihr Rechtsanwalt nicht nur privat mit Bitcoin und Kryptowährungen zu tun haben, sondern bereits Fälle in diesem Themengebiet erfolgreich bearbeitet haben. Er oder sie sollte ganz offen und ehrlich mitteilen können, wie seine rechtlicher Expertise und seine Erfahrungen in diesem Bereich konkret ausschauen.</p>
+                    <p><ins>Fragen Sie Ihren Anwalt daher explizit danach,</ins> ob er </p>
+                    <ol>
+                      <li><strong>selbst</strong> mit Bitcoin und Kryptowährungen zu tun hat</li>
+                      <li>schon solche Fälle <strong> bearbeitet hat</strong> </li>
+                      <li>und wie <strong>erfolgreich</strong> die Fälle ausgegangen sind.  </li>
+                    </ol>
+                    <h3>Es gibt keinen Fachanwalt für Blockchain oder Kryptowährungen                    </h3>
+                    <p>Welche Kanzlei und welche Rechtsanwälte sind nun wirklich erfahren mit rechtlichen Fragen zum Thema Kryptowährungen?
+                    <br>
+                    Anwälte können sich nach dem Studium der Rechtswissenschaften durch die Erlangung eines Fachanwaltstitels besondere Kenntnisse in einem Rechtsgebiet aneignen und bescheiningen lassen.
+                    <br>
+                    Fachanwaltstitel gibt es beispielsweise für die Bereiche Bank- und Kapitalmarktrecht, Strafrecht und Steuerrecht. Bitcoin und Kryptowährungen als Thematik ist mit diesen Rechtsgebieten durchaus verknüpft.
+                    <br>
+                    Allerdings ist es momentan noch so, dass die Fachanwaltslehrgänge zum Bank- und Kapitalmarktrecht, Strafrecht und Steuerrecht derzeit zumindest nicht schwerpunktmäßig – oder gar nicht – Bitcoin und Kryptowährungen behandeln.
+                    <br>
+                    Insofern ist mit diesen Fachanwaltstiteln noch nicht gesagt, dass der Rechtsanwalt tatsächlich mit Bitcoin und anderenKryptowährungen erfahren ist.
+                    <br>
+                    Jedoch ist es vorteilhafter, einen Fachanwalt für Strafrecht zu kontaktieren, falls es strafrechtliche Probleme mit digitalen Währungen gibt, als mit solch einer Fragestellung einen Familienrechtler anzufragen.</p>
+                    <h3>Fachanwalt für IT-Recht im Bereich Blockchain ausgebildet?                  </h3>
+                    <p>Der Fachanwaltstitel für IT-Recht könnte durchaus Kenntnisse im Bereich Bitcoin und Kryptowährungen zumindest wahrscheinlich erscheinen lassen.
+                    <br>
+                    Denn das Informationstechnologierecht bezieht sich auf spezielle rechtliche Fragestellungen rund um das Internet und allem Digitalen, also auch dem Thema Blockchain.
+                    <br>
+                    Sicher ist den meisten Fachanwälten für IT-Recht der Begriff Kryptowährung zumindest geläufig. Allerdings wird diese Thematik im Fachanwaltslehrgang nicht tief genug oder gar nicht behandelt. Die Fachanwaltsordnung (FAO) jedenfalls setzt in § 14k nicht ausdrücklich Kenntnisse im Bereich Blockchain voraus.
+                    <br>
+                    Ein Fachanwalt für IT-Recht ist daher nicht automatisch auch mit Einzelfallkonstellationen bezüglich Kryptowährungen vertraut.
+                    <br>
+                    Mindestens aber schrecken Fachanwälte für IT-Recht nicht vor neuartigen Fällen und digitalen Fragestellungen zurück.</p>
+                    <h3>Erfahrungen gehen über Fachanwaltstitel bei der Frage, welcher Rechtsanwalt für Kryptowährungen geeignet ist!</h3>
+                    <p><ins>Wichtiger</ins> als Fachanwaltstitel oder sonstige Abschlüsse ist die Erfahrung von Rechtsanwälten mit Ihrem speziellen Rechtsproblem.
+                    <br>
+                    Denn was nützen Titel und Abschlüsse, wenn Sie Ihrem Anwalt überhaupt erst einmal erklären müssen, was ein Airdrop oder durch eine Hardfork erhaltene Coins sind?
+                    <br>
+                    Für Ihr Rechtsproblem mit Bitcoin und Kryptowährungen sollten Sie einen Rechtsanwalt suchen, der</p>
+                      <ul>
+                        <li>auf dem <ins>neuesten Stand ist,</ins></li>
+                        <li>die Thematik aktiv verfolgt</li>
+                        <li>und eine eigene rechtliche Auffassung vertritt.  </li>
+                      </ul>
+                    <p>Beispielsweise sind einige Finanzämter der Ansicht, Bürgerinnen und Bürger bei der steuerlichen Erfassung von Gewinnen, die durch Kryptowährungen realisiert wurden, nach ihren Walletadressen zu fragen.
+                    <br>
+                    Diese pauschale Frage nach den Walletadressen ist unserer Ansicht nach unzulässig, da die Walletadresse nicht per se steuerrechtliche Relevanz aufweist.
+                    <br> 
+                    Wer sich als Rechtsanwalt nicht in der Thematik auskennt, wird sich vermutlich ohne größere Recherche oder eigene rechtliche Prüfung einfach der Meinung des Finanzamts anschließen. Dies wirkt sich nicht nur negativ auf die Beratungsqualität aus. Sie als Mandat merken die Unerfahrenheit Ihres Rechtsanwalts in erster Linie an den Kosten. Diese fallen für Sie durch den erhöhten Bearbeitungsaufwand höher aus als bei einem Rechtsanwalt, der umfangreiche Erfahrungen auf diesem Gebiet hat.</p>
+                      <p><ins>Leider nicht selten zum Nachteil der MandantInnen.  </ins> </p>
+                      <h3>Aktuelle Fälle von Anlagebetrug: betrügerische Broker und Trading-Betrug!                      </h3>
+                      <p>Derzeit grassieren eine Menge unseriöser Trading-Plattformen und betrügerischer Broker, die professionellen Anlagebetrug betreiben. Dabei werden zumeist Kryptowährungen wie Bitcoin verwendet, um die gutgläubigen Geldanleger um ihr Erspartes zu bringen. 
+                        <br>
+                        Aufgrund der aktuellen Problematik hat sich die vorliegende Kanzlei auf dieses Themengebiet spezialisiert. Betroffene können sich bezüglich betrügerisch agierender Broker unkompliziert Unterstützung durch einen erfahrenen Rechtsanwalt einholen (vgl. Broker Betrug Anwalt).
+                        <br>
+                        Sollten Sie von einer unseriösen Trading-Plattform betroffen sein, die Ihnen Gewinne vorgespielt, aber nie ausbezahlt hat, kann Ihnen ebenso juristisch weitergeholfen werden. Nutzen Sie die Möglichkeit, sich kostenfrei zu Ihrem speziellen Einzelfall im Rahmen einer Ersteinschätzung zu orientieren (siehe Trading Betrug Anwalt).
+                        <br>
+                        Wichtig ist, dass sich Opfer von Anlagebetrug gegen die kriminellen Machenschaften zur Wehr setzen. Erst kürzlich gelang Ermittlungsbehörden ein entscheidender Schlag gegen eine international vernetzte Bande von trickreichen Anlagebetrügern. Beachten Sie vor einem Investment im Bereich der neuartigen Trading-Plattformen bitte die nachfolgenden Warnmeldungen:</p>
+                        <ul>
+                          <li><a href="">Schwarze Liste Broker</a></li>
+                          <li><a href="">Anlagebetrug Warnliste</a></li>
+                          <li><a href="">Anlagebetrug Warnliste</a></li>
+                          <li><a href="">Betrügerische Online-Broker</a></li>
+                        </ul>
+                        <p>Durch eine Onlinerecherche zu aktuell betrügerischen Brokern und unseriösen Trading-Plattformen über die obig genannten Warnlisten konnte schon so mancher unerfahrener Geldanleger vor Schlimmeren bewahrt werden.                        </p>
+                        <h3>Hilfe bei Frage, welcher Rechtsanwalt für Kryptowährungen richtig ist: Unverbindlich bei uns anfragen!                        </h3>
+                        <p>Welches Rechtsproblem mit Blockchain, Bitcoin und Kryptowährungen Sie auch haben mögen. Melden Sie sich gern über das Kontaktformular. Mit einer ersten unverbindlichen Anfrage tragen Sie keinerlei Kostenrisiko.                        </p>
+                        <div class="borderContainer">
+                          <div style="margin-right: 30px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 64 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
+                          </div>
+                          <div>
+                            <h4>Unsere kostenlose Ersteinschätzung </h4>
+                            <p>Uns können Sie Ihren Fall unverbindlich per Mail schildern. Wir melden uns mit einer kostenfreien Ersteinschätzung zurück. Sie erhalten somit ohne Kostenrisiko eine Rückmeldung eines erfahrenen Rechtsanwalts für Kryptowährungen. Sollten wir nach der Ersteinschätzung Ihres Rechtsproblems gute Erfolgsaussichten sehen, teilen wir Ihnen dies mit. Unsere Konditionen legen wir transparent offen, sodass Sie eine fundierte Entscheidung treffen können, ob Sie uns als rechtlichen Beistand möchten und welche Kosten damit verbunden wären.                            </p>
+                          </div>
+                            
+                        </div>
+                        <p>Folgende <strong>beispielhafte</strong> Fallkonstellationen zählen wir zu unserem Leistungsspektrum:                        </p>
+                        <ul>
+                          <li>steuerrechtliche Probleme mit Bitcoin und anderen Kryptowährungen sowie Anfertigung von Steuerklärungen                          </li>
+                          <li>Vertretung gegenüber Kryptobörsen bei Problemen mit der Mittelherkunft                          </li>
+                          <li>anwaltliche Korrespondenz mit dem für Sie zuständigen Finanzamt (Nachweise)                          </li>
+                          <li>Schriftwechsel mit Ihrer Bank, die womöglich wegen Bitcoin und Kryptowährungen unsicher ist oder einen Mittelherkunftsnachweis verlangt                          </li>
+                          <li>Airdrops, Hardforks                          </li>
+                          <li>Airdrops, Hardforks                          </li>
+                          <li>Forderung von Schadensersatz, weil Kryptobörse oder andere Dienstleister nicht auszahlen                          </li>
+                          <li>Account gehackt                          </li>
+                          <li>private key verloren/vergessen/unvollständig                          </li>
+                        </ul>
+                        <p>Schreiben Sie uns gern eine Mail und schildern Sie Ihr Rechtsproblem. Sie erhalten eine kostenfreie Ersteinschätzung eines auf den Gebieten Kryptowährungen, NFT und Blockchain spezialisierten Rechtsanwalts. </p>
+                        <ul style="list-style: none;">
+                          <li style="font-size: 12px;">Veröffentlicht: 05.06.2021                          </li>
+                          <li style="font-size: 12px;">Letzte Aktualisierung: 31.12.2022                          </li>
+                        </ul> 
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-lg-6">  
+                            <div class="thoughtContainer">
+                            <div class="header">
+                              <h4>Herr Rechtsanwalt Martin Wehrmann                            </h4>
+                            </div>
+                            <div class="content">
+                              <div>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <p>Durchschnittsbewertung aus Bewertungen                            </p>
+                              </div>
+                              <div>
+                                <p><a href="">Alle Bewertungen (480)</a></p>
+                                <h5><a href="">Anlagebetrug</a></h5>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <p>Bewertung vom 26.10.2023</p>
+                              </div>
+  
+                              <div>
+                                <h5><a href="">Schnelle, kompetente Beantwortung</a></h5>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <p>Bewertung vom 25.10.2023</p>
+                              </div>
+  
+                              <div>
+                                <h5><a href="">Traiing Betrug</a></h5>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <p>Bewertung vom 25.10.2023</p>
+                              </div>
+  
+                              <div>
+                                <h5><a href="">Sehr schnelle Antwort</a></h5>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <p>Bewertung vom 25.10.2023</p>
+                              </div>
+  
+                              <div>
+                                <h5><a href="">Training Betrug</a></h5>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <p>Bewertung vom 19.10.2023</p>
+                              </div>
+                            </div>
+  
+                            <div class="contentFooter">
+                              <p style="text-align: right;"><a href="">Rechtsanwalt Martin</a>
+                                <br>
+                              <a href="">Wehrmann bewerten</a></p>
+                              <!-- logon qashel chi linum -->
+                            </div>
+                            
+                          </div>
+                          <div class="footerDiv" align="center" style="margin-top: 20px;">
+                            <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                              <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                              <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                              <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                              <span> <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ff9600}</style><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span>
+                                <br>
+                              <span><a href="">480 Bewertungen auf anwalt.de</a></span>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
                 </div>
-              <div class="row justify-content-between ">
-                <div class="col-4 col-md-4 mb-3">
-                  <h5>Section</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                  </ul>
-                </div>
-          
-                <div class="col-2 col-md-2 mb-3">
-                  <h5>Section</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                  </ul>
-                </div>
-          
-                <div class="col-2 col-md-2 mb-3">
-                  <h5>Section</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                  </ul>
-                </div>
-          
-                <div class="col-2 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                  </div>
-          
-                  <div class="col-2 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                  </div>
-            
-              </div>
-          
-              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></li>
-                  </ul>
-                <p>&copy; © 2023 Alle Rechte vorbehalten.</p>
-                <ul class="nav flex">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    
-                  </ul>
-              </div>
-            </footer>
           </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 bg-div"></div>
+            <div class="col-md-6 text-div">
+              <h2>Wie können wir helfen? </h2>
+              <p>Wir helfen Privatpersonen in allen Fragen rund um Kryptowährungen und NFTs. Zudem unterstützen wir Unternehmen rechtlich bei der Anwendung der Blockchain-Technologie. Schildern Sie uns Ihren Fall gern per E-Mail für eine unverbindliche und kostenfreie Ersteinschätzung. Sie entscheiden danach ob und wie Sie weiter vorgehen.            </p>
+              <button class="btn btn-outline-light p-3">Jetzt Kontakt aufnehmen</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  ">
+              <div class="col mb-3">
+                <a class="navbar-brand " href="#">
+                    <img src="assets/img/footer-logo.png" class="logo" alt="">
+                  </a>
+                <!-- <p class="text-muted">&copy; 2022</p> -->
+              </div>
+          
+              <div class="col mb-3">
+                <h5>KONTAKT </h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>GRUNDLAGEN</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+                </ul>
+              </div>
+          
+              <div class="col mb-3">
+                <h5>KRYPTO & NFT</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+                </ul>
+              </div>
+
+              <div class="col mb-3">
+                <h5>KRYPTOBÖRSE</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a></li>
+                </ul>
+              </div>
+
+
+            </footer>
+
+            
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4  border-top">
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
+          </ul>
+        <p>&copy; 2023 Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script><!-- uxxel uxxutyun@ -->
 </body>
 </html>

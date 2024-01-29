@@ -1,15 +1,59 @@
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  font-family: "Abrade";
+  font-family: sans-serif;
+}
 header {
-    background-image: url(../assets/img/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/hehader-bg.jpg);
+    /* background-position: 0px -40px; */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 700px;
+
 }
-header .header-div {
+header .navbar {
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+header nav ul li a{
+    color: black !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px;
+}
+header nav .dropdown-menu li {
+    padding: 7px;
+}
+header .header-btn {
+    background-color: #A5123C;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.5px;
+}
+header  a .logo {
+    width: 70%;
+}
+
+
+header .headerblackDiv{
     margin: 300px 0px 0px 80px;
     padding: 20px 40px 10px 40px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: #000000D4;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: black;
 }
-header h1 {
+
+header .headerWhiteDiv{
+    margin: 0px 0px 0px 350px;
+    padding: 10px 20px 5px 20px;
+    background-color: #FFFFFFE3;
+}
+
+header .headerblackDiv h1 {
     color: white;
     font-family: "Abrade", Sans-serif;
     font-size: 50px;
@@ -22,22 +66,147 @@ header h1 {
     stroke: black;
     text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.5);
 }
-header .header-sec-div{
-    margin: 0px 0px 0px 350px;
-    padding: 10px 20px 5px 20px;
-    background-color: #FFFFFFE3;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: black;
-}
-header h6 {
-    color: #A5123C;;
+header .headerWhiteDiv h6{
+    color: #A5123C;
     font-family: "Abrade", Sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.3em;
     letter-spacing: -2px;
 }
-footer p{
-    color: #C6C6C6;
+
+.sec1 h2 {
+    color: black;
+    font-family: "Abrade", Sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.sec1 .borderContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 20px 0px;
+    padding: 20px;
+    border:1px solid #666666;
+}
+.sec1 .borderContainer svg {
+    fill: #A5123C;
+    font-size: 80px;
+}
+.sec1  .thoughtContainer {
+    max-width: 100%;
+    border: 1px solid  #a5123c;
+}
+
+.sec1  .thoughtContainer .header {
+    background-color: #a5123c;
+    padding: 10px;
+}
+.sec1  .thoughtContainer .header h4 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    font-weight: lighter;
+}
+.sec1  .thoughtContainer .content {
+   padding: 20px;
+}
+
+.sec1 .thoughtContainer .content div {
+    border-bottom: 1px solid #e5e5e5;
+}
+.sec1  .thoughtContainer   a{
+    color: #A5123C;
+    text-decoration: none;
+}
+.sec1  .thoughtContainer .content div h5 a {
+    color: #A5123C;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+ }
+
+.sec1  .thoughtContainer .contentFooter {
+    padding: 20px;
+ }
+ 
+.sec1  svg {
+    fill: #ff9600;
+}
+
+.sec1 h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.sec1 ul li {
+   color: #666666;
+   line-height: 27px;
+}
+.sec1 ul li a {
+    color: #A5123C;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.sec1 .footerDiv a{
+   text-decoration: none;
+   color: #666666;
+   font-size: 12px;
+
+}
+/* section 2 */
+
+.section2 .bg-div{
+    background-image: url(../assets/img/kryptowaehrungen-nft-rechtsanwalt-anwalt.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section2 .text-div{
+    background-color: #A5123C;
+    color: white !important;
+    padding: 100px;
+}
+.section2 .text-div p{
+    color: white !important;
+}
+.section2 .text-div h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.section2 .text-div p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+.footer {
+    background-color: black;
+}
+.footer h5 {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.footer a{
+    color: #A5123C !important;
+}
+.footer .logo {
+    width: 40%;
+}
+footer  {
+    color: white;
+}
+
+p {
+    color: #666666;
+    line-height: 27px;
+}
+a{
+    text-decoration: none;
 }
